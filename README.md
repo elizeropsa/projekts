@@ -13,3 +13,25 @@ PyPDF2 bibliotēku izmantoju vispārīgam darbam ar PDF failiem. Ar šīs biblio
 Pathlib
 
 No pathlib bibliotēkas izmantoju klasi Path. Manā programmā šī bibliotēka un klase tiek izmantota, lai nodrošinātu visu PDF failu apstrādi. Sākumā norādu ceļu uz visiem PDF failiem, pēctam ar Path palīdzību iegūstu visus ceļus uz norādītajā mapē esošajiem failiem, kas atbilst '.pdf' paplašinājumam.
+
+Izmantotās metodes
+
+1. .glob(*.pdf) - Šī pathlib bibliotēkas metode atgriež visus failus, kas atbilst paplašinājumam '.pdf'.
+
+2. PyPDF2.PdfReader(file) - Šī PyPDF2 bibliotēkas metode izveido objektu, kas nolasa un ļauj apstrādāt faila saturu.
+
+3. len(pdf_reader.pages) - Šī metode nosaka iegūtā faila lapu daudzumu.
+
+4. lapa.extract_text() - Šī metode izgūst tekstu no iepriekš norādītās faila lapas.
+
+5. text.find('Veikals "Maxima"') - Šī metode PDF faila tekstā meklē iekavās norādīto teksta fragmentu un atgriež tās sākuma pozīciju.
+
+6. text[pos1+17:pos2-19] - Šī metode izgūst tekstu no pozīcijas pos1+17 līdz pozīcijai pos2-19.
+
+7. .rstrip() - Šī metode noņem tukšuma un jaunas rindas simbolus no izgūtā teksta.
+
+8. cena = cena.replace(",",".") - Šī metode aizstāj visus "," ar ".", lai vēlāk iegūto cenu varētu interpretēt kā decimālskaitli.
+
+9. float(cena) - Šī metode nomaina mainīgā cena tipu (šajā gadījumā no str) uz float, lai ar to varētu veikt matemātiskas darbības.
+
+10. print(f"Decembrī pārtikā iztērētā naudas summa: {dsumma} EUR") - Šajā metodē izmantots f-string lai izvadītu noteiktu mainīgo iekļautu teksta virknē.
