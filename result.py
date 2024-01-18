@@ -69,6 +69,8 @@ print(f"Janvārī papildus iztērētā summa: {jpapildus_summa} EUR")
 if jatlikums + jpapildus_atlikums > 0:
     print(f"Janvārī atlikusī pārtikai paredzētā summa: {round(jatlikums, 2)} EUR")
     print(f"Papildus tēriņiem janvārī atlikusī summa: {round(jpapildus_atlikums, 2)} EUR")
+if (datlikums + dpapildus_atlikums > 0):
+        print(f"Janvārī tev pieejamā naudas summa (ieskaitot decembra atlikumu) ir {round(jatlikums+jpapildus_atlikums+datlikums+dpapildus_atlikums, 2)} EUR")
 else: 
     print("UZMANĪBU!!! Tu esi iztērējusi visu mēneša limitu!!!!")
         
